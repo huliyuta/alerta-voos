@@ -1,0 +1,67 @@
+* { box-sizing: border-box; }
+
+body {
+  width: 370px;
+  margin: 0;
+  padding: 14px;
+  font: 13px/1.4 system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: #1f2937;
+  background: #fff;
+}
+
+h1 { display: flex; align-items: center; gap: 8px; font-size: 16px; margin: 0 0 12px; }
+h1 img { width: 24px; height: 24px; }
+
+.dica { color: #6b7280; margin: 0 0 14px; }
+
+footer { display: flex; flex-direction: column; gap: 8px; border-top: 1px solid #e5e7eb; padding-top: 10px; }
+
+label { display: flex; flex-direction: column; gap: 3px; font-weight: 500; }
+label.check { flex-direction: row; align-items: center; gap: 6px; font-weight: 400; }
+
+select {
+  padding: 6px 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font: inherit;
+}
+
+button {
+  padding: 7px 10px;
+  border: 0;
+  border-radius: 6px;
+  background: #e5e7eb;
+  color: #111827;
+  font: inherit;
+  font-weight: 500;
+  cursor: pointer;
+}
+button:hover { background: #d1d5db; }
+
+#lista { list-style: none; padding: 0; margin: 0 0 14px; display: flex; flex-direction: column; gap: 8px; }
+
+#lista li {
+  position: relative;
+  padding: 10px 30px 10px 10px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+#lista li.caiu { border-color: #16a34a; background: #f0fdf4; }
+#lista .titulo { font-weight: 600; }
+#lista .meta { color: #6b7280; font-size: 12px; }
+#lista .parecido {
+  display: block;
+  margin-top: 6px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  background: #fef2f2;
+  color: #991b1b;
+  font-size: 12px;
+  text-decoration: none;
+}
+#lista .parecido:hover { background: #fee2e2; }
+#lista .remover {
+  position: absolute; top: 6px; right: 6px;
+  background: none; color: #9ca3af; padding: 2px 6px; font-size: 16px;
+}
+#lista .remover:hover { color: #dc2626; }

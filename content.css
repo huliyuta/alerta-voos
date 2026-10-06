@@ -1,0 +1,60 @@
+.alerta-voos-botao {
+  all: unset;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin: 8px 16px 12px;
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: #1e293b;
+  color: #fff;
+  font: 600 12px/1.2 system-ui, -apple-system, "Segoe UI", sans-serif;
+  cursor: pointer;
+  position: relative;
+  z-index: 5;
+}
+.alerta-voos-botao:hover { background: #334155; }
+
+.alerta-voos-monitorado { outline: 2px dashed #1e293b !important; outline-offset: 2px !important; }
+.alerta-voos-monitorado > .alerta-voos-botao { background: #16a34a; }
+
+.alerta-voos-destaque {
+  outline: 3px solid #ef4444 !important;
+  outline-offset: 2px !important;
+}
+
+#alerta-voos-banner {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  z-index: 2147483647;
+  max-width: 380px;
+  padding: 14px 36px 14px 16px;
+  background: #1e293b;
+  color: #fff;
+  font: 14px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif;
+  border-left: 5px solid #ef4444;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+#alerta-voos-banner strong {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+
+#alerta-voos-banner div + div {
+  margin-top: 6px;
+}
+
+#alerta-voos-banner button {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  background: none;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}

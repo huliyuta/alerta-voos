@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <h1><img src="icons/icon128.png" alt=""> Alerta de Voos</h1>
+
+  <ul id="lista"></ul>
+  <p id="vazio" class="dica" hidden>
+    Abra uma busca de passagens (Decolar, LATAM, GOL, Azul...) e clique em
+    <b>🔔 Avise-me</b> no voo que você quer acompanhar.
+  </p>
+
+  <footer>
+    <label>Considerar parecido se a data variar até
+      <select id="tolerancia">
+        <option value="0">mesma data</option>
+        <option value="1">±1 dia</option>
+        <option value="2">±2 dias</option>
+        <option value="3">±3 dias</option>
+        <option value="5">±5 dias</option>
+        <option value="7">±7 dias</option>
+      </select>
+    </label>
+    <label class="check"><input id="mesmaCidade" type="checkbox"> Aceitar outro aeroporto da mesma cidade (ex.: CDG ↔ ORY)</label>
+    <label>Verificar sozinho a cada
+      <select id="intervalo">
+        <option value="0">desligado</option>
+        <option value="60">1 hora</option>
+        <option value="180">3 horas</option>
+        <option value="360">6 horas</option>
+        <option value="720">12 horas</option>
+        <option value="1440">24 horas</option>
+      </select>
+    </label>
+    <button type="button" id="verificarAgora">Verificar agora</button>
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>

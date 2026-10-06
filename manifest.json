@@ -1,0 +1,53 @@
+{
+  "manifest_version": 3,
+  "name": "Alerta de Voos",
+  "version": "1.1.0",
+  "version_name": "1.1 — avise-me",
+  "description": "Botão \"Avise-me\" nos voos: avisa quando o preço baixar ou aparecer um voo parecido mais barato.",
+  "permissions": ["storage", "notifications", "alarms"],
+  "host_permissions": [
+    "*://*.latamairlines.com/*",
+    "*://*.voegol.com.br/*",
+    "*://*.voeazul.com.br/*",
+    "*://*.flytap.com/*",
+    "*://*.copaair.com/*",
+    "*://*.aa.com/*",
+    "*://*.united.com/*",
+    "*://*.delta.com/*",
+    "*://*.aerolineas.com.ar/*",
+    "*://*.decolar.com/*",
+    "*://*.maxmilhas.com.br/*",
+    "*://*.kayak.com.br/*",
+    "*://www.google.com/travel/flights*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.latamairlines.com/*",
+        "*://*.voegol.com.br/*",
+        "*://*.voeazul.com.br/*",
+        "*://*.flytap.com/*",
+        "*://*.copaair.com/*",
+        "*://*.aa.com/*",
+        "*://*.united.com/*",
+        "*://*.delta.com/*",
+        "*://*.aerolineas.com.ar/*",
+        "*://*.decolar.com/*",
+        "*://*.maxmilhas.com.br/*",
+        "*://*.kayak.com.br/*",
+        "*://www.google.com/travel/flights*"
+      ],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": { "128": "icons/icon128.png" }
+  },
+  "icons": { "128": "icons/icon128.png" }
+}
