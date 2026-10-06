@@ -42,3 +42,7 @@ códigos de aeroporto, datas e preço no mesmo bloco; se não mostrar, o botão 
 - Os preços da Decolar nesses cards são "a partir de" — o valor final pode mudar na reserva.
 - Alguns sites bloqueiam abas automáticas (captcha/antibot); aí a verificação automática não
   lê nada, mas a leitura enquanto você navega continua valendo.
+
+## Licença
+
+[MIT](LICENSE)
